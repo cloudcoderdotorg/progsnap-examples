@@ -19,10 +19,10 @@ for a in dataset.activities():
               if type(e) is progsnap.Submission]
       total += len(subs)
       n += 1
-    avg = total / n
-    if avg > highest_avg:
-      activity = a
-      highest_avg = avg
+  avg = total / n
+  if avg > highest_avg:
+    activity = a
+    highest_avg = avg
 
 print("Activity {}, {} submissions/student"
       .format(activity.number(), highest_avg))
