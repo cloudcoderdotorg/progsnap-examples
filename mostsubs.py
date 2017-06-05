@@ -17,9 +17,9 @@ for a in dataset.activities():
       subs = [e for e in wh.events()
               if type(e) is progsnap.Submission]
       total += len(subs)
-      if total > max_subs:
-        max_subs = total
-        activity = a
+  if total > max_subs:
+    max_subs = total
+    activity = a
 
 print("Activity {}, {} submissions"
       .format(activity.number(), max_subs))
